@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <com.example.xm.widget.ExpandableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_information" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设备信息" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/close_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical"
+                app:divider="@drawable/dot"
+                app:showDividers="beginning|end">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设备名称：" />
+
+                        <TextView
+                            android:id="@+id/nickname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="GLP001" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设备ID：" />
+
+                        <TextView
+                            android:id="@+id/id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="GLP001" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="添加时间：" />
+
+                        <TextView
+                            android:id="@+id/createtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2016-08-15" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="上次同步时间：" />
+
+                        <TextView
+                            android:id="@+id/lastsynchronizetime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="未同步" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="在线状态：" />
+
+                    <TextView
+                        android:id="@+id/online"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="在线" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+        </HorizontalScrollView>
+    </com.example.xm.widget.ExpandableLayout>
+
+
+    <com.example.xm.widget.ExpandableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_process" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="设备信息" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/close_arrow" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:src="@drawable/action" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:divider="@drawable/dot"
+                    app:showDividers="beginning|end">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@+id/stateimage"
+                                android:text="设备状态："
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textSize="30dp" />
+
+
+                            <TextView
+                                android:id="@+id/state"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:text="Large Text"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/relativeLayout1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignRight="@+id/stateimage"
+                                    android:text="当前植物："
+                                    android:textAppearance="?android:attr/textAppearanceLarge"
+                                    android:textSize="30dp" />
+
+                                <com.example.xm.widget.MarqueeTextView
+                                    android:id="@+id/textview"
+                                    android:layout_width="150dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:ellipsize="marquee"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="center"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="充气剩余时间："
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:id="@+id/inflatecount"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="#938f8a"
+                                    android:gravity="center_horizontal"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="秒"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="共"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:id="@+id/inflatetime"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="#938f8a"
+                                    android:gravity="center_horizontal"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="秒"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="保持剩余时间："
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:id="@+id/holdcount"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="#938f8a"
+                                    android:gravity="center_horizontal"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="分"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="共"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:id="@+id/holdtime"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="#938f8a"
+                                    android:gravity="center_horizontal"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="分"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="放气剩余时间："
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:id="@+id/bleedcount"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="#938f8a"
+                                    android:gravity="center_horizontal"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="分"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="共"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:id="@+id/bleedtime"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="#938f8a"
+                                    android:gravity="center_horizontal"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="分"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="循环剩余时间："
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:id="@+id/cyclecount"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="#938f8a"
+                                    android:gravity="center_horizontal"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="时"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="共"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:id="@+id/cycletime"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="#938f8a"
+                                    android:gravity="center_horizontal"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="时"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="循环剩余次数："
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:id="@+id/count"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="#938f8a"
+                                    android:gravity="center_horizontal"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="次"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="共"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:id="@+id/times"
+                                    android:layout_width="80dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="#938f8a"
+                                    android:gravity="center_horizontal"
+                                    android:singleLine="true"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="次"
+                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="设备状态："
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/point"
+                                android:text="气泵:"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <ImageView
+                                android:id="@+id/pumpstate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/point"
+                                android:src="@drawable/off" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/point"
+                                android:text="阀门1:"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <ImageView
+                                android:id="@+id/valve1state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/off" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="阀门2:"
+                                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                            <ImageView
+                                android:id="@+id/valve2state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/off" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </android.support.v7.widget.LinearLayoutCompat>
+            </HorizontalScrollView>
+        </ScrollView>
+    </com.example.xm.widget.ExpandableLayout>
+
+
+    <com.example.xm.widget.ExpandableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_message" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="消息" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/close_arrow" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/messageaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:src="@drawable/action" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:orientation="vertical"
+            app:divider="@drawable/dot"
+            app:showDividers="beginning|end">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/messge_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </com.example.xm.widget.ExpandableLayout>
+
+
+</LinearLayout>
